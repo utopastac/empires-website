@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Support — Empires</title>
+    <meta name="description" content="Support and contact for Empires on iOS." />
+    <link rel="icon" href="../assets/app-icon-256.png" type="image/png" />
+    <link rel="apple-touch-icon" href="../assets/app-icon-256.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600&family=Syne:wght@700;800&display=swap"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="shell">
+        <nav class="nav" aria-label="Primary">
+          <a class="brand" href="../">
+            <img
+              class="brandIcon"
+              src="../assets/app-icon-256.png"
+              width="40"
+              height="40"
+              alt=""
+            />
+            <img
+              class="brandLogotype"
+              src="../assets/logotype.svg"
+              width="160"
+              height="20"
+              alt="Empires"
+            />
+          </a>
+          <div class="navLinks">
+            <a href="../">Home</a>
+            <a href="../privacy/">Privacy</a>
+          </div>
+        </nav>
+
+        <main class="panel prose">
+          <h1>Support</h1>
+          <p>
+            Need help with Empires? Start with the notes below, or email us
+            directly.
+          </p>
+
+          <div class="ctaRow spaced">
+            <a
+              class="button"
+              href="mailto:archgrovehouse@gmail.com?subject=Empires%20support"
+            >
+              Email support
+            </a>
+            <a class="button secondary" href="../privacy/">Privacy Policy</a>
+          </div>
+
+          <h2>How do we play?</h2>
+          <p>
+            One phone creates a game. Others join nearby over the local network,
+            or use <strong>Add player</strong> so several people share a device.
+            Pick a question, write secret answers, reveal them once, then guess
+            who wrote what — drag empires together when someone is correct.
+          </p>
+
+          <h2>Friends can’t find my game</h2>
+          <p>
+            Make sure everyone is on the same Wi‑Fi or Personal Hotspot, and that
+            Local Network access is allowed for Empires in iOS Settings. Bluetooth
+            / peer-to-peer can help when Wi‑Fi isolation is on, but same-network
+            Wi‑Fi is the most reliable.
+          </p>
+
+          <h2>Where is my data stored?</h2>
+          <p>
+            Game state lives on the phones in your session. Uninstalling the app
+            removes local app data. Empires does not keep your answers on a
+            remote server.
+          </p>
+
+          <h2>Something looks wrong</h2>
+          <p>
+            Tell us your device model, iOS version, and what you were doing when
+            the issue happened. Screenshots help. Email
+            <a href="mailto:archgrovehouse@gmail.com"
+              >archgrovehouse@gmail.com</a
+            >.
+          </p>
+
+          <h2>Contact</h2>
+          <p>
+            <a href="mailto:archgrovehouse@gmail.com"
+              >archgrovehouse@gmail.com</a
+            >
+            <br />
+            We aim to reply within a few days.
+          </p>
+        </main>
+
+        <footer class="footer">
+          <span>© <span id="y"></span> Empires</span>
+          <div class="footerLinks">
+            <a href="../">Home</a>
+            <a href="../privacy/">Privacy Policy</a>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script>
+      document.getElementById('y').textContent = String(new Date().getFullYear());
+    </script>
+  </body>
+</html>

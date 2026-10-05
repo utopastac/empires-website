@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Empires</title>
+    <meta
+      name="description"
+      content="Empires — a local multiplayer party word game. Guess who wrote which answer and build your empire."
+    />
+    <link rel="icon" href="./assets/app-icon-256.png" type="image/png" />
+    <link rel="apple-touch-icon" href="./assets/app-icon-256.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600&family=Syne:wght@700;800&display=swap"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="shell">
+        <nav class="nav" aria-label="Primary">
+          <a class="brand" href="./">
+            <img
+              class="brandIcon"
+              src="./assets/app-icon-256.png"
+              width="40"
+              height="40"
+              alt=""
+            />
+            <img
+              class="brandLogotype"
+              src="./assets/logotype.svg"
+              width="160"
+              height="20"
+              alt="Empires"
+            />
+          </a>
+          <div class="navLinks">
+            <a href="./support/">Support</a>
+            <a href="./privacy/">Privacy</a>
+          </div>
+        </nav>
+
+        <main class="panel hero">
+          <div class="heroBrand">
+            <h1>
+              <img
+                class="logotypeHero"
+                src="./assets/logotype.svg"
+                width="439"
+                height="56"
+                alt="Empires"
+              />
+            </h1>
+          </div>
+          <p class="lede">
+            A local multiplayer party word game for friends in the same room.
+            Write secret answers, guess who wrote what, and absorb everyone into
+            your empire.
+          </p>
+
+          <div class="ctaRow">
+            <a
+              class="button"
+              href="#"
+              aria-disabled="true"
+              title="App Store link coming soon"
+            >
+              App Store — soon
+            </a>
+            <a class="button secondary" href="./support/">Support</a>
+          </div>
+
+          <ul class="features">
+            <li>
+              <span class="tick" aria-hidden="true">✓</span>
+              <div>
+                <strong>Play nearby, no accounts</strong>
+                <br />
+                <span
+                  >Create or join over the local network. No internet required
+                  for a game.</span
+                >
+              </div>
+            </li>
+            <li>
+              <span class="tick" aria-hidden="true">✓</span>
+              <div>
+                <strong>Pass-and-play on one phone</strong>
+                <br />
+                <span
+                  >Add extra seats so multiple people can share a device for
+                  secret answers.</span
+                >
+              </div>
+            </li>
+            <li>
+              <span class="tick" aria-hidden="true">✓</span>
+              <div>
+                <strong>Guess in the room, drag on the board</strong>
+                <br />
+                <span
+                  >Correct guesses join your empire. Wrong guesses pass
+                  control.</span
+                >
+              </div>
+            </li>
+          </ul>
+
+          <ul class="accents" aria-hidden="true">
+            <li style="background: var(--yellow)"></li>
+            <li style="background: var(--purple)"></li>
+            <li style="background: var(--peach)"></li>
+            <li style="background: var(--green)"></li>
+            <li style="background: var(--coral)"></li>
+            <li style="background: var(--cyan)"></li>
+          </ul>
+        </main>
+
+        <footer class="footer">
+          <span>© <span id="y"></span> Empires</span>
+          <div class="footerLinks">
+            <a href="./support/">Support</a>
+            <a href="./privacy/">Privacy Policy</a>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script>
+      document.getElementById('y').textContent = String(new Date().getFullYear());
+    </script>
+  </body>
+</html>
