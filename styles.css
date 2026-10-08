@@ -23,16 +23,16 @@
   --orange: #ff9800;
   --text-secondary: #7f7f7f;
   --border-subtle: #d9d9d9;
-  --on-purple: #ffcc00;
-  --on-peach: #8b2252;
+  --on-purple: #ffea70;
+  --on-peach: var(--wine);
   --on-green: #2d1a4e;
   --on-yellow: #c4461a;
   --on-coral: #1a1a4e;
   --on-lime: #3d1a8c;
   --on-cyan: #754635;
-  --on-blue: #ffd166;
-  --on-indigo: #ff9f1c;
-  --on-pink: #1a3a5c;
+  --on-blue: var(--navy);
+  --on-indigo: #ffd970;
+  --on-pink: var(--navy);
   --on-plum: #7ddf64;
 
   --surface: var(--white);
