@@ -11,37 +11,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600&family=Syne:wght@700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Syne:wght@700;800&display=swap"
     />
     <link rel="stylesheet" href="../styles.css" />
   </head>
   <body>
-    <div class="page">
-      <div class="shell">
-        <nav class="nav" aria-label="Primary">
-          <a class="brand" href="../">
-            <img
-              class="brandIcon"
-              src="../assets/app-icon-256.png"
-              width="40"
-              height="40"
-              alt=""
-            />
-            <img
-              class="brandLogotype"
-              src="../assets/logotype.svg"
-              width="160"
-              height="20"
-              alt="Empires"
-            />
-          </a>
-          <div class="navLinks">
-            <a href="../">Home</a>
-            <a href="../privacy/">Privacy</a>
-          </div>
-        </nav>
-
-        <main class="panel prose">
+    <header class="siteHeader">
+      <div class="frame siteHeaderInner">
+        <a class="brand" href="../">
+          <img
+            class="brandIcon"
+            src="../assets/app-icon-256.png"
+            width="40"
+            height="40"
+            alt=""
+          />
+          <img
+            class="wordmark"
+            src="../assets/logotype.svg"
+            width="160"
+            height="20"
+            alt="Empires"
+          />
+        </a>
+        <a
+          class="button headerStore"
+          href="#"
+          aria-disabled="true"
+          title="App Store link coming soon"
+        >
+          App Store — soon
+        </a>
+      </div>
+    </header>
+    <main>
+      <article class="doc">
           <h1>Support</h1>
           <p>
             Need help with Empires? Start with the notes below, or email us
@@ -98,19 +102,36 @@
             <br />
             We aim to reply within a few days.
           </p>
-        </main>
-
-        <footer class="footer">
-          <span>© <span id="y"></span> Empires</span>
-          <div class="footerLinks">
-            <a href="../">Home</a>
-            <a href="../privacy/">Privacy Policy</a>
-          </div>
-        </footer>
+      </article>
+    </main>
+    <footer class="siteFooter">
+      <div class="frame siteFooterFrame">
+        <div class="siteFooterBrand">
+          <a href="../">
+            <img
+              class="wordmark wordmarkSm"
+              src="../assets/logotype.svg"
+              width="120"
+              height="16"
+              alt="Empires"
+            />
+          </a>
+          <p>A party word game for friends in the same room. Bluff. Deduce. Conquer.</p>
+          <p class="compat">Play nearby on iPhone. No account required.</p>
+        </div>
+        <div class="siteFooterMeta">
+          <nav class="navLinks" aria-label="Legal">
+            <a href="../support/">Support</a>
+            <a href="../privacy/">Privacy</a>
+          </nav>
+          <p>
+            A product from
+            <a href="https://f-90.co.uk">f-90</a>
+          </p>
+          <p class="compat">© <span id="y"></span> Empires</p>
+        </div>
       </div>
-    </div>
-    <script>
-      document.getElementById('y').textContent = String(new Date().getFullYear());
-    </script>
+    </footer>
+    <script src="../site.js"></script>
   </body>
 </html>

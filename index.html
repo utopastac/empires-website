@@ -14,55 +14,353 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600&family=Syne:wght@700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Syne:wght@700;800&display=swap"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="page">
-      <div class="shell">
-        <nav class="nav" aria-label="Primary">
-          <a class="brand" href="./">
-            <img
-              class="brandIcon"
-              src="./assets/app-icon-256.png"
-              width="40"
-              height="40"
-              alt=""
-            />
-            <img
-              class="brandLogotype"
-              src="./assets/logotype.svg"
-              width="160"
-              height="20"
-              alt="Empires"
-            />
-          </a>
-          <div class="navLinks">
-            <a href="./support/">Support</a>
-            <a href="./privacy/">Privacy</a>
-          </div>
-        </nav>
+    <header class="siteHeader">
+      <div class="frame siteHeaderInner">
+        <a class="brand" href="./">
+          <img
+            class="brandIcon"
+            src="./assets/app-icon-256.png"
+            width="40"
+            height="40"
+            alt=""
+          />
+          <img
+            class="wordmark"
+            src="./assets/logotype.svg"
+            width="160"
+            height="20"
+            alt="Empires"
+          />
+        </a>
+        <a
+          class="button headerStore"
+          href="#"
+          aria-disabled="true"
+          title="App Store link coming soon"
+        >
+          App Store — soon
+        </a>
+      </div>
+    </header>
 
-        <main class="panel hero">
-          <div class="heroBrand">
-            <h1>
+    <main>
+      <section class="questions" aria-label="Sample questions">
+        <div class="questionsStage">
+          <div class="frame questionsFrame">
+            <div class="questionsPanel" aria-hidden="true"></div>
+          </div>
+          <ul class="questionBoard">
+            <li class="qCard qCardFeature" data-pack="icebreakers">
+              <p class="qPack">Icebreakers</p>
+              <p class="qText">What's the weirdest food combination you secretly love?</p>
+            </li>
+            <li class="qCard" data-pack="silly">
+              <p class="qPack">Pure Nonsense</p>
+              <p class="qText">What's your signature dance move called?</p>
+            </li>
+            <li class="qCard" data-pack="hot-takes">
+              <p class="qPack">Hot Takes</p>
+              <p class="qText">What's your hottest take about pizza?</p>
+            </li>
+            <li class="qCard" data-pack="storytime">
+              <p class="qPack">Story Time</p>
+              <p class="qText">What's the pettiest reason you've ever held a grudge?</p>
+            </li>
+            <li class="qCard" data-pack="classics">
+              <p class="qPack">The Classics</p>
+              <p class="qText">If your life were a movie, what would the title be?</p>
+            </li>
+            <li class="qCard" data-pack="friend-group">
+              <p class="qPack">Friend Group</p>
+              <p class="qText">Who here would survive longest on a deserted island?</p>
+            </li>
+            <li class="qCard" data-pack="hypotheticals">
+              <p class="qPack">What If?</p>
+              <p class="qText">If you won the lottery tomorrow, what's the first ridiculous purchase?</p>
+            </li>
+            <li class="qCard" data-pack="throwbacks">
+              <p class="qPack">Throwbacks</p>
+              <p class="qText">What trend did you take far too seriously?</p>
+            </li>
+            <li class="qCard" data-pack="after-dark">
+              <p class="qPack">After Dark</p>
+              <p class="qText">What's the boldest message you've ever sent?</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="hero">
+        <div class="frame heroFrame">
+          <h1 class="lede">
+            <span class="brandWord">Empires</span> is a local multiplayer party
+            word game. Write secret answers, guess who wrote them, and absorb
+            everyone into your empire.
+          </h1>
+        </div>
+      </section>
+
+      <section class="showcase" data-scroller aria-label="App screens">
+        <div class="frame showcaseHeader">
+          <div class="scrollerNav">
+            <button type="button" data-scroll="-1" aria-label="Previous screen">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M14.5 5.5 8 12l6.5 6.5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <button type="button" data-scroll="1" aria-label="Next screen">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="m9.5 5.5 6.5 6.5-6.5 6.5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <ul class="showcaseTrack" data-track>
+          <li class="showcaseSlide">
+            <img src="./assets/screenshots/home.png" alt="Home screen" width="460" height="1000" />
+          </li>
+          <li class="showcaseSlide">
+            <img src="./assets/screenshots/lobby.png" alt="Game lobby" width="460" height="1000" />
+          </li>
+          <li class="showcaseSlide">
+            <img src="./assets/screenshots/answering.png" alt="Writing a secret answer" width="460" height="1000" />
+          </li>
+          <li class="showcaseSlide">
+            <img src="./assets/screenshots/revealing.png" alt="Revealing answers" width="460" height="1000" />
+          </li>
+          <li class="showcaseSlide">
+            <img src="./assets/screenshots/guessing.png" alt="Guessing who wrote an answer" width="460" height="1000" />
+          </li>
+          <li class="showcaseSlide">
+            <img src="./assets/screenshots/round-over.png" alt="Round results" width="460" height="1000" />
+          </li>
+        </ul>
+      </section>
+
+      <section class="play" aria-labelledby="play-heading">
+        <div class="frame playFrame">
+          <h2 id="play-heading">Built for the people in the room</h2>
+          <div class="playGrid">
+            <article class="playCard">
+              <div class="playPanel playPanelYellow">
+                <div class="nearby" aria-hidden="true">
+                  <span class="avatar avatarCoral">A</span>
+                  <span class="linkDash"></span>
+                  <span class="avatar avatarSky">M</span>
+                </div>
+              </div>
+              <p>Create or join over the local network. No internet required.</p>
+            </article>
+            <article class="playCard">
+              <div class="playPanel playPanelPeach">
+                <div class="seats" aria-hidden="true">
+                  <span class="seat"><b class="avatar avatarLime">J</b> Jo</span>
+                  <span class="seat"><b class="avatar avatarPink">S</b> Sam</span>
+                </div>
+              </div>
+              <p>Add extra seats so several people can share one phone.</p>
+            </article>
+            <article class="playCard">
+              <div class="playPanel playPanelPurple">
+                <div class="empire" aria-hidden="true">
+                  <span class="avatar avatarYellow avatarLg">B</span>
+                  <span class="avatar avatarCyan">K</span>
+                  <span class="avatar avatarPeach">R</span>
+                  <span class="avatar avatarLime">N</span>
+                </div>
+              </div>
+              <p>Correct guesses join your empire. Wrong guesses pass control.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="packs" aria-labelledby="packs-heading">
+        <div class="frame packsFrame">
+          <h2 id="packs-heading">Question packs</h2>
+          <ul class="packGrid">
+            <li class="pack" data-pack="icebreakers">
+              <div class="packFace">
+                <img src="./assets/packs/icebreakers.png" alt="" />
+              </div>
+              <h3>Icebreakers</h3>
+              <p>Easy questions to get everyone talking</p>
+            </li>
+            <li class="pack" data-pack="silly">
+              <div class="packFace">
+                <img src="./assets/packs/silly.png" alt="" />
+              </div>
+              <h3>Pure Nonsense</h3>
+              <p>Low stakes, high chaos</p>
+            </li>
+            <li class="pack" data-pack="throwbacks">
+              <div class="packFace">
+                <img src="./assets/packs/throwbacks.png" alt="" />
+              </div>
+              <h3>Throwbacks</h3>
+              <p>Childhood stories and questionable phases</p>
+            </li>
+            <li class="pack" data-pack="hot-takes">
+              <div class="packFace">
+                <img src="./assets/packs/hot-takes.png" alt="" />
+              </div>
+              <h3>Hot Takes</h3>
+              <p>Defend the indefensible</p>
+            </li>
+            <li class="pack" data-pack="classics">
+              <div class="packFace">
+                <img src="./assets/packs/classics.png" alt="" />
+              </div>
+              <h3>The Classics</h3>
+              <p>A little bit of everything</p>
+            </li>
+            <li class="pack" data-pack="hypotheticals">
+              <div class="packFace">
+                <img src="./assets/packs/hypotheticals.png" alt="" />
+              </div>
+              <h3>What If?</h3>
+              <p>Impossible choices and alternate realities</p>
+            </li>
+            <li class="pack" data-pack="storytime">
+              <div class="packFace">
+                <img src="./assets/packs/storytime.png" alt="" />
+              </div>
+              <h3>Story Time</h3>
+              <p>Confessions worth hearing</p>
+            </li>
+            <li class="pack" data-pack="friend-group">
+              <div class="packFace">
+                <img src="./assets/packs/friend-group.png" alt="" />
+              </div>
+              <h3>Friend Group</h3>
+              <p>Call out the people in this room</p>
+            </li>
+            <li class="pack" data-pack="after-dark">
+              <div class="packFace">
+                <img src="./assets/packs/after-dark.png" alt="" />
+              </div>
+              <h3>After Dark</h3>
+              <p>Bolder questions for close friends</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="rounds" data-scroller aria-labelledby="rounds-heading">
+        <div class="frame roundsHeader">
+          <h2 id="rounds-heading">How a round goes</h2>
+          <div class="scrollerNav">
+            <button type="button" data-scroll="-1" aria-label="Previous step">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M14.5 5.5 8 12l6.5 6.5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <button type="button" data-scroll="1" aria-label="Next step">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="m9.5 5.5 6.5 6.5-6.5 6.5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <ul class="track" data-track>
+          <li class="slide">
+            <div class="slideVisual toneYellow">
+              <span class="step">01</span>
+              <div class="slideCopy">
+                <strong>Create or join</strong>
+                <p>One phone hosts. Everyone else joins nearby, or shares that phone.</p>
+              </div>
+            </div>
+          </li>
+          <li class="slide">
+            <div class="slideVisual tonePeach">
+              <span class="step">02</span>
+              <div class="slideCopy">
+                <strong>Pick a pack</strong>
+                <p>Icebreakers, hot takes, story time, after dark — then a question.</p>
+              </div>
+            </div>
+          </li>
+          <li class="slide">
+            <div class="slideVisual toneLime">
+              <span class="step">03</span>
+              <div class="slideCopy">
+                <strong>Write in secret</strong>
+                <p>Answers stay hidden until the room is ready to reveal them once.</p>
+              </div>
+            </div>
+          </li>
+          <li class="slide">
+            <div class="slideVisual toneCyan">
+              <span class="step">04</span>
+              <div class="slideCopy">
+                <strong>Guess the writer</strong>
+                <p>A correct guess pulls that player into your empire.</p>
+              </div>
+            </div>
+          </li>
+          <li class="slide">
+            <div class="slideVisual toneCoral">
+              <span class="step">05</span>
+              <div class="slideCopy">
+                <strong>Conquer the room</strong>
+                <p>A wrong guess hands control over. Last empire standing wins.</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="cta" aria-labelledby="cta-heading">
+        <div class="frame">
+          <div class="ctaPanel">
+            <div class="ctaCopy">
               <img
-                class="logotypeHero"
-                src="./assets/logotype.svg"
-                width="439"
-                height="56"
-                alt="Empires"
+                class="heroIcon"
+                src="./assets/app-icon-256.png"
+                width="104"
+                height="104"
+                alt=""
               />
-            </h1>
-          </div>
-          <p class="lede">
-            A local multiplayer party word game for friends in the same room.
-            Write secret answers, guess who wrote what, and absorb everyone into
-            your empire.
-          </p>
-
-          <div class="ctaRow">
+              <h2 id="cta-heading">Take the room</h2>
+              <p>
+                No accounts. No game server. No ads. Just the people sitting
+                with you.
+              </p>
+            </div>
             <a
               class="button"
               href="#"
@@ -71,66 +369,39 @@
             >
               App Store — soon
             </a>
-            <a class="button secondary" href="./support/">Support</a>
           </div>
+        </div>
+      </section>
+    </main>
 
-          <ul class="features">
-            <li>
-              <span class="tick" aria-hidden="true">✓</span>
-              <div>
-                <strong>Play nearby, no accounts</strong>
-                <br />
-                <span
-                  >Create or join over the local network. No internet required
-                  for a game.</span
-                >
-              </div>
-            </li>
-            <li>
-              <span class="tick" aria-hidden="true">✓</span>
-              <div>
-                <strong>Pass-and-play on one phone</strong>
-                <br />
-                <span
-                  >Add extra seats so multiple people can share a device for
-                  secret answers.</span
-                >
-              </div>
-            </li>
-            <li>
-              <span class="tick" aria-hidden="true">✓</span>
-              <div>
-                <strong>Guess in the room, drag on the board</strong>
-                <br />
-                <span
-                  >Correct guesses join your empire. Wrong guesses pass
-                  control.</span
-                >
-              </div>
-            </li>
-          </ul>
-
-          <ul class="accents" aria-hidden="true">
-            <li style="background: var(--yellow)"></li>
-            <li style="background: var(--purple)"></li>
-            <li style="background: var(--peach)"></li>
-            <li style="background: var(--green)"></li>
-            <li style="background: var(--coral)"></li>
-            <li style="background: var(--cyan)"></li>
-          </ul>
-        </main>
-
-        <footer class="footer">
-          <span>© <span id="y"></span> Empires</span>
-          <div class="footerLinks">
+    <footer class="siteFooter">
+      <div class="frame siteFooterFrame">
+        <div class="siteFooterBrand">
+          <a href="./">
+            <img
+              class="wordmark wordmarkSm"
+              src="./assets/logotype.svg"
+              width="120"
+              height="16"
+              alt="Empires"
+            />
+          </a>
+          <p>A party word game for friends in the same room. Bluff. Deduce. Conquer.</p>
+          <p class="compat">Play nearby on iPhone. No account required.</p>
+        </div>
+        <div class="siteFooterMeta">
+          <nav class="navLinks" aria-label="Legal">
             <a href="./support/">Support</a>
-            <a href="./privacy/">Privacy Policy</a>
-          </div>
-        </footer>
+            <a href="./privacy/">Privacy</a>
+          </nav>
+          <p>
+            A product from
+            <a href="https://f-90.co.uk">f-90</a>
+          </p>
+          <p class="compat">© <span id="y"></span> Empires</p>
+        </div>
       </div>
-    </div>
-    <script>
-      document.getElementById('y').textContent = String(new Date().getFullYear());
-    </script>
+    </footer>
+    <script src="./site.js"></script>
   </body>
 </html>
